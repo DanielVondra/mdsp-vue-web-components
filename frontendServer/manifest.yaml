@@ -1,0 +1,9 @@
+---
+applications:
+  - name: notifikace
+    memory: 128M
+    disk_quota: 512MB
+    instances: 1
+    random-route: true
+    buildpacks:
+      - nodejs_buildpack
