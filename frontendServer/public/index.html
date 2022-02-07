@@ -5,22 +5,30 @@
   <meta charset="UTF-8" />
   <link rel="icon" href="/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- START: mdsp web components -->
-  <script id="mdsp-webcomponents-loader" type="text/javascript"
-    src="https://static.eu1.mindsphere.io/webcomponents/v1/index.js" data-onload="mdspwc_loaded"></script>
-  <script>function mdspwc_loaded() { console.log('MdspWebComponents loaded ✔️') };</script>
-  <!-- END: mdsp web components -->
-
   <title>Vite App</title>
-  <script type="module" crossorigin src="/assets/index.9b8c6766.js"></script>
-  <link rel="modulepreload" href="/assets/vendor.7470c836.js">
+  <script type="module" crossorigin src="/assets/index.ed8c4e64.js"></script>
+  <link rel="modulepreload" href="/assets/vendor.a391cb09.js">
   <link rel="stylesheet" href="/assets/index.cd40795c.css">
 </head>
 
 <body>
-  <div id="app"></div>
+  <noscript>
+    <strong>We're sorry but the application doesn't work properly without JavaScript enabled.
+      Please enable it to continue.</strong>
+  </noscript>
+
+  <div id="_mdspcontent">
+    <div id="app"></div>
+  </div>
+
   
+  <script src="https://static.eu1.mindsphere.io/osbar/v4/js/main.min.js"></script>
+  <script>
+    _mdsp.init({
+      title: "MindSphere Web Components - demo",
+      appId: "_mdspcontent"
+    });
+  </script>
 </body>
 
 </html>
