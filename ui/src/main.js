@@ -1,4 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import mdsp from '@crasty/mdsp-vue'
 
-createApp(App).mount('#app')
+const app = createApp(App)
+app.use(mdsp)
+app.mount('#app')

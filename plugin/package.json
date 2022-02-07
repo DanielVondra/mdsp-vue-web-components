@@ -1,6 +1,6 @@
 {
   "name": "@crasty/mdsp-vue",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "main": "dist/library.js",
   "module": "dist/library.mjs",
   "files": [
