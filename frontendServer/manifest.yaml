@@ -1,6 +1,6 @@
 ---
 applications:
-  - name: notifikace
+  - name: webcomponentsdemo
     memory: 128M
     disk_quota: 512MB
     instances: 1

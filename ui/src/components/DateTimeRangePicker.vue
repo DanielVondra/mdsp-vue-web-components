@@ -79,7 +79,4 @@ onUnmounted(() => {
 </template>
 
 <style>
-mdsp-date-time-range-picker {
-  min-height: 20rem;
-}
 </style>

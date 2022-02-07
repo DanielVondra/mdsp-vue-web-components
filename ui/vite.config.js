@@ -13,7 +13,7 @@ export default defineConfig({
     })
   ],
   build: {
-    outDir: '../frontendServer/public',
+    outDir: '../library/public',
     emptyOutDir: true,
   },
 });
