@@ -1,0 +1,14 @@
+{
+  "displayName": "Mindsphere Web Components - demo",
+  "appVersion": "0.0.1",
+  "appCopyright": "© VDT technology 2022",
+  "links": {
+    "default": [
+      {
+        "type": "WWW",
+        "name": "default site",
+        "value": "https://vdtcz-webcomponentsdemo-vdtcz.eu1.mindsphere.io/"
+      }
+    ]
+  }
+}

@@ -6,12 +6,13 @@ import {
 
 const AspectVariableSelectorElement = ref(null);
 const AssetViewElement = ref(null);
-const MapElement = ref(null);
+const AssetMapElement = ref(null);
 const TimeSeriesChartElement = ref(null);
 
 const selectedAssetChangedEvent = e => {
   console.log(e)
   AspectVariableSelectorElement.value.selectedAssetIds([e.detail.assetId])
+  AssetMapElement.value.selectedAssetId(e.detail.assetId)
 }
 const selectedAspectsAndVariablesChangedEvent = e => {
   TimeSeriesChartElement.value.variablePaths(e.detail);
@@ -45,13 +46,6 @@ const dateRangeChangedEvent = e => {
       viewMode="All"
       @selectedAspectsAndVariablesChanged="selectedAspectsAndVariablesChangedEvent"
     />
-    <mdsp-map
-      ref="MapElement"
-      draggable="true"
-      latitude="50.0950665011266"
-      longitude="14.388862704545424"
-      zoomLevel="17"
-    />
   </aside>
 </template>
 
@@ -65,7 +59,7 @@ body {
 #app {
   display: grid;
   grid-template-columns: minmax(15rem, 1fr) 3fr minmax(15rem, 1fr);
-  min-height: 100vh;
+  min-height: calc(100vh - 44px); //OSbar + ::before Sadge
   padding: 1rem;
   gap: 1rem;
 }
@@ -83,7 +77,7 @@ aside {
   display: grid;
 
   &.right {
-    grid-template-rows: 1fr auto;
+    grid-template-rows: 1fr;
     max-height: 100vh;
     gap: 1rem;
   }
